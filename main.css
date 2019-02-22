@@ -1,0 +1,168 @@
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Raleway Medium"), local("Raleway-Medium"),
+    url("fonts/raleway_med_ext.woff2") format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Raleway Medium"), local("Raleway-Medium"),
+    url("fonts/raleway_med.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Raleway Bold"), local("Raleway-Bold"),
+    url("fonts/raleway_bold_ext.woff2") format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Raleway Bold"), local("Raleway-Bold"),
+    url("fonts/raleway_bold.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  background-color: #dfd8aa;
+}
+
+.header {
+  height: 100vh;
+  padding: 15vh 5vw 0 10vw;
+}
+
+.header > .logo {
+  height: 25vh;
+  margin: 0 0 15px 0;
+}
+
+.header > p {
+  font-size: 1.2em;
+}
+
+.header > button {
+  background-color: #a00000;
+  border-color: #a00000;
+}
+
+.tracks {
+  height: 100vh;
+  padding: 15vh 5vw 0 10vw;
+}
+
+.tracks > h1 {
+  text-decoration: underline;
+}
+
+.track-card {
+  margin: 5vh 0 0 0;
+}
+
+.track-card > h3 {
+  margin: 1em 0;
+}
+
+.track-card > button {
+  background-color: #a00000;
+  border-color: #a00000;
+}
+
+.guide {
+  height: 100vh;
+  padding: 15vh 5vw 0 10vw;
+}
+
+.guide > h1 {
+  text-decoration: underline;
+}
+
+.guide > ul {
+  list-style: none;
+}
+
+.guide > ul > li {
+  font-size: 1.05em;
+  margin-bottom: 5px;
+}
+
+.guide > ul > li::before {
+  content: "●";
+  color: #a00000;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.faq {
+  height: 100vh;
+  padding: 15vh 5vw 0 10vw;
+}
+
+.faq > h1 {
+  text-decoration: underline;
+}
+
+.faq > ol {
+  list-style: none;
+  counter-reset: question;
+}
+
+.faq > ol > li {
+  font-size: 1.05em;
+  margin-bottom: 5px;
+}
+
+.faq > ol > .ques::before {
+  counter-increment: question;
+  content: counter(question) ".) ";
+  color: #000046;
+  font-weight: 700;
+  display: inline-block;
+  width: 1.25em;
+  margin-left: -1em;
+}
+
+.faq > ol > .ans::before {
+  content: "Ans.";
+  color: #a00000;
+  font-weight: 700;
+  display: inline-block;
+  width: 2.5em;
+  margin-left: -1em;
+}
+
+.contact {
+  height: 100vh;
+  padding: 15vh 5vw 0 10vw;
+}
+
+.contact > h1 {
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+
+.contact > button {
+  background-color: #a00000;
+  border-color: #a00000;
+}
