@@ -41,14 +41,26 @@
     U+FEFF, U+FFFD;
 }
 
-body {
+* {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
+}
+
+body {
   background-color: #dfd8aa;
 }
 
+.btn-danger {
+  background-color: #a00000;
+  border-color: #a00000;
+}
+
+#navbarNav {
+  justify-content: end;
+}
+
 .header {
-  height: 100vh;
+  min-height: 100vh;
   padding: 15vh 5vw 0 10vw;
 }
 
@@ -61,13 +73,38 @@ body {
   font-size: 1.2em;
 }
 
-.header > button {
-  background-color: #a00000;
-  border-color: #a00000;
+table {
+  margin-top: 1.5em;
 }
 
+table tr td:nth-child(2) {
+  border-left: solid black 1px;
+  padding-left: 1em;
+}
+
+table tr:nth-child(2) td img {
+  margin-top: 1em;
+}
+
+.data-logo {
+  width: 100px;
+  height: auto;
+  margin-right: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .header > .logo {
+    height: 20vh;
+  }
+}
+
+/* .header > button {
+  background-color: #a00000;
+  border-color: #a00000;
+} */
+
 .tracks {
-  height: 100vh;
+  min-height: 100vh;
   padding: 15vh 5vw 0 10vw;
 }
 
@@ -83,13 +120,13 @@ body {
   margin: 1em 0;
 }
 
-.track-card > button {
+/* .track-card > button {
   background-color: #a00000;
   border-color: #a00000;
-}
+} */
 
 .guide {
-  height: 100vh;
+  min-height: 100vh;
   padding: 15vh 5vw 0 10vw;
 }
 
@@ -115,7 +152,7 @@ body {
 }
 
 .faq {
-  height: 100vh;
+  min-height: 100vh;
   padding: 15vh 5vw 0 10vw;
 }
 
@@ -153,7 +190,7 @@ body {
 }
 
 .contact {
-  height: 100vh;
+  min-height: 100vh;
   padding: 15vh 5vw 0 10vw;
 }
 
@@ -162,7 +199,7 @@ body {
   margin-bottom: 1em;
 }
 
-.contact > button {
+/* .contact > button {
   background-color: #a00000;
   border-color: #a00000;
-}
+} */

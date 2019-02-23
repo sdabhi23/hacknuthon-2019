@@ -18,23 +18,75 @@
       href="css/fontawesome/css/all.min.css"
     />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
   </head>
   <body>
-    <section class="header">
-      <img class="logo" src="img/layer_0.png" />
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#home">HackNUthon</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tracks">Tracks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#guide">Guidelines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <!-- <li class="nav-item">
+            <button class="btn btn-danger">Apply Now!</button>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+    <section id="home" class="header">
+      <img class="logo" src="img/logo.png" />
       <p>
-        A 36 hours long hackathon where the participants come in a maximum team
-        size of 3 and minimum team size of 2.
+        As Innovation and entrepreneurship are at the peak in india, we, at
+        Nirma University, are organizing HackNUthon 2019, a unique platform for
+        identifying new and disruptive technologies and innovations to solve the
+        different challenges.
       </p>
       <p>
-        Certain technology tracks will be floated and the shortlisted teams will
-        have to develop a module or a project in a given time duration which
-        will be judge on a set of criteria by a panel.
+        It's an non-stop 36 hours product development competition, where problem
+        statements will be posed to participants for innovative solutions.
       </p>
       <button type="button" class="btn btn-danger">Apply Now!</button>
+      <table>
+        <tr>
+          <td>Organised by:</td>
+          <td>As a part of:</td>
+        </tr>
+        <tr>
+          <td>
+            <img class="data-logo" src="img/csi_logo.png" />
+            <img class="data-logo" src="img/nirma.png" />
+          </td>
+          <td>
+            <a href="http://nutech.nirmauni.ac.in"><img class="data-logo" src="img/nutech.png" /></a>
+            <a href="http://nutech.nirmauni.ac.in"><img class="data-logo" src="img/theme.png" /></a>
+          </td>
+        </tr>
+      </table>
     </section>
-    <section class="tracks">
+    <section id="tracks" class="tracks">
       <h1>Tracks</h1>
       <div class="row">
         <div class="track-card col-md-4">
@@ -87,7 +139,7 @@
         </div>
       </div>
     </section>
-    <section class="guide">
+    <section id="guide" class="guide">
       <h1>Guidelines</h1>
       <ul>
         <li>
@@ -152,7 +204,7 @@
         </li>
       </ul>
     </section>
-    <section class="faq">
+    <section id="faq" class="faq">
       <h1>FAQ</h1>
       <ol>
         <li class="ques">
@@ -217,7 +269,7 @@
         </li>
       </ol>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
       <h1>Contact Us</h1>
       <form>
         <div class="form-group">
@@ -247,5 +299,36 @@
         Submit <i class="fas fa-paper-plane"></i>
       </button>
     </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- For better scrolling
+    <script src="js/jquery.scrollify.js"></script>
+    <script>
+      jQuery(document).ready(function() {
+        function resizeForm() {
+          var width =
+            window.innerWidth > 0
+              ? window.innerWidth
+              : document.documentElement.clientWidth;
+          if (width > 1024) {
+            $(function() {
+              $.scrollify({
+                section: "section",
+                sectionName: "section-name",
+                scrollbars: false,
+                overflowScroll: true
+              });
+
+              $(".scroll").click(function(e) {
+                e.preventDefault();
+                $.scrollify("move", $(this).attr("href"));
+              });
+            });
+          }
+        }
+        window.onresize = resizeForm;
+        resizeForm();
+      });
+    </script> -->
   </body>
 </html>
