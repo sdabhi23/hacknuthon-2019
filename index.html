@@ -21,7 +21,7 @@
   </head>
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#home">HackNUthon</a>
+      <a class="navbar-brand" href="#home">HackNUthon</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -59,13 +59,13 @@
     <section id="home" class="header">
       <img class="logo" src="img/logo.png" />
       <p>
-        As Innovation and entrepreneurship are at the peak in india, we, at
-        Nirma University, are organizing HackNUthon 2019, a unique platform for
-        identifying new and disruptive technologies and innovations to solve the
+        As innovation and entrepreneurship are at the peak in India, we, at
+        Nirma University, are organizing HackNUthon 2019, a platform for
+        identifying new and disruptive technologies and innovations to solve
         different challenges.
       </p>
       <p>
-        It's an non-stop 36 hours product development competition, where problem
+        It's a non-stop 36 hours product development competition, where problem
         statements will be posed to participants for innovative solutions.
       </p>
       <button type="button" class="btn btn-danger">Apply Now!</button>
@@ -80,8 +80,12 @@
             <img class="data-logo" src="img/nirma.png" />
           </td>
           <td>
-            <a href="http://nutech.nirmauni.ac.in"><img class="data-logo" src="img/nutech.png" /></a>
-            <a href="http://nutech.nirmauni.ac.in"><img class="data-logo" src="img/theme.png" /></a>
+            <a href="http://nutech.nirmauni.ac.in"
+              ><img class="data-logo" src="img/nutech.png"
+            /></a>
+            <a href="http://nutech.nirmauni.ac.in"
+              ><img class="data-logo" src="img/theme.png"
+            /></a>
           </td>
         </tr>
       </table>
@@ -95,7 +99,14 @@
             <i class="fas fa-shield-alt fa-stack-1x fa-inverse"></i>
           </span>
           <h3>Defence</h3>
-          <button class="btn btn-danger">Suggested Problems</button>
+          <button
+            class="btn btn-danger"
+            data-toggle="modal"
+            data-target="#track_modal"
+            data-track="defence"
+          >
+            Suggested Problems
+          </button>
         </div>
         <div class="track-card col-md-4">
           <span class="fa-stack fa-2x">
@@ -103,7 +114,14 @@
             <i class="fas fa-map-marked-alt fa-stack-1x fa-inverse"></i>
           </span>
           <h3>Travel / Tourism</h3>
-          <button class="btn btn-danger">Suggested Problems</button>
+          <button
+            class="btn btn-danger"
+            data-toggle="modal"
+            data-target="#track_modal"
+            data-track="travel"
+          >
+            Suggested Problems
+          </button>
         </div>
         <div class="track-card col-md-4">
           <span class="fa-stack fa-2x">
@@ -111,7 +129,14 @@
             <i class="fas fa-laptop-medical fa-stack-1x fa-inverse"></i>
           </span>
           <h3>Healthcare</h3>
-          <button class="btn btn-danger">Suggested Problems</button>
+          <button
+            class="btn btn-danger"
+            data-toggle="modal"
+            data-target="#track_modal"
+            data-track="healthcare"
+          >
+            Suggested Problems
+          </button>
         </div>
         <div class="track-card col-md-4">
           <span class="fa-stack fa-2x">
@@ -119,7 +144,14 @@
             <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
           </span>
           <h3>Education</h3>
-          <button class="btn btn-danger">Suggested Problems</button>
+          <button
+            class="btn btn-danger"
+            data-toggle="modal"
+            data-target="#track_modal"
+            data-track="education"
+          >
+            Suggested Problems
+          </button>
         </div>
         <div class="track-card col-md-4">
           <span class="fa-stack fa-2x">
@@ -127,7 +159,14 @@
             <i class="fas fa-industry fa-stack-1x fa-inverse"></i>
           </span>
           <h3>Industrial Automation</h3>
-          <button class="btn btn-danger">Suggested Problems</button>
+          <button
+            class="btn btn-danger"
+            data-toggle="modal"
+            data-target="#track_modal"
+            data-track="industry"
+          >
+            Suggested Problems
+          </button>
         </div>
         <div class="track-card col-md-4">
           <span class="fa-stack fa-2x">
@@ -135,7 +174,14 @@
             <i class="fas fa-spa fa-stack-1x fa-inverse"></i>
           </span>
           <h3>Agriculture</h3>
-          <button class="btn btn-danger">Suggested Problems</button>
+          <button
+            class="btn btn-danger"
+            data-toggle="modal"
+            data-target="#track_modal"
+            data-track="agriculture"
+          >
+            Suggested Problems
+          </button>
         </div>
       </div>
     </section>
@@ -299,36 +345,44 @@
         Submit <i class="fas fa-paper-plane"></i>
       </button>
     </section>
+
+    <!-- modals -->
+
+    <div
+      class="modal fade"
+      id="track_modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal_title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal_title"></h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /modals -->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- For better scrolling
-    <script src="js/jquery.scrollify.js"></script>
-    <script>
-      jQuery(document).ready(function() {
-        function resizeForm() {
-          var width =
-            window.innerWidth > 0
-              ? window.innerWidth
-              : document.documentElement.clientWidth;
-          if (width > 1024) {
-            $(function() {
-              $.scrollify({
-                section: "section",
-                sectionName: "section-name",
-                scrollbars: false,
-                overflowScroll: true
-              });
-
-              $(".scroll").click(function(e) {
-                e.preventDefault();
-                $.scrollify("move", $(this).attr("href"));
-              });
-            });
-          }
-        }
-        window.onresize = resizeForm;
-        resizeForm();
-      });
-    </script> -->
+    <script src="main.js"></script>
   </body>
 </html>
