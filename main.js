@@ -1,7 +1,10 @@
 const problems = {
-  defence: [
+  defense: [
     "Audio scrambling based encoding algorithm",
-    "Video stabilization for unmanned aerial vehicles"
+    "Video stabilization for unmanned aerial vehicles",
+    "Apply ML to daily decisions in the field of defense, like whether or not a paticular equipment is fit for use",
+    "Predict the path of a projectile based on various parameters for precision in aiming",
+    ""
   ],
   travel: [
     "AR/VR based travel brochures",
@@ -19,7 +22,7 @@ const problems = {
     "A digitalised agri-supply chain",
     "Automation in agriculture",
     "A GIS (geographic information system) surveying/mapping for precision agriculture",
-    "Data-driven farming using Sensors on Crops and Farm Machinery"
+    "Data-driven farming using sensors on crops and farm machinery"
   ],
   industry: [
     "IoT based product monitoring system",
@@ -40,7 +43,7 @@ const titles = {
   agriculture: "Agriculture",
   industry: "Industrial Automation",
   healthcare: "Healthcare",
-  defence: "Defence"
+  defense: "Defense"
 };
 
 $("#track_modal").on("show.bs.modal", function(event) {
