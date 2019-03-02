@@ -3,8 +3,7 @@ const problems = {
     "Audio scrambling based encoding algorithm",
     "Video stabilization for unmanned aerial vehicles",
     "Apply ML to daily decisions in the field of defense, like whether or not a paticular equipment is fit for use",
-    "Predict the path of a projectile based on various parameters for precision in aiming",
-    ""
+    "Predict the path of a projectile based on various parameters for precision in aiming"
   ],
   travel: [
     "AR/VR based travel brochures",
