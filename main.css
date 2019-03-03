@@ -99,8 +99,7 @@ table tr:nth-child(2) td img {
 }
 
 .sponsors {
-  min-height: 100vh;
-  padding: 15vh 5vw 0 10vw;
+  padding: 10vh 5vw 0vh 10vw;
 }
 
 .sponsors > h1 {
@@ -116,13 +115,12 @@ table tr:nth-child(2) td img {
 
 @media only screen and (max-width: 768px) {
   .sponsors > img {
-    margin: 0.5em;
+    margin: 0.5em 0.5em 2em 0.5em;
   }
 }
 
 .tracks {
-  min-height: 100vh;
-  padding: 15vh 5vw 0 10vw;
+  padding: 10vh 5vw 0 10vw;
 }
 
 .tracks > h1 {
@@ -138,8 +136,7 @@ table tr:nth-child(2) td img {
 }
 
 .guide {
-  min-height: 100vh;
-  padding: 15vh 5vw 0 10vw;
+  padding: 10vh 5vw 0 10vw;
 }
 
 .guide > h1 {
@@ -164,8 +161,7 @@ table tr:nth-child(2) td img {
 }
 
 .contact {
-  min-height: 100vh;
-  padding: 15vh 5vw 0 10vw;
+  padding: 10vh 5vw 5vh 10vw;
 }
 
 .contact > h1 {
