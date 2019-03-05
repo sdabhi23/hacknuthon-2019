@@ -160,6 +160,36 @@ table tr:nth-child(2) td img {
   margin-left: -1em;
 }
 
+.learning {
+  padding: 10vh 5vw 0vh 10vw;
+}
+
+.learning > h1 {
+  text-decoration: underline;
+}
+
+.learning > ul {
+  list-style: none;
+}
+
+.learning > ul > li {
+  font-size: 1.05em;
+  margin-bottom: 5px;
+}
+
+.learning > ul > li::before {
+  content: "●";
+  color: #a00000;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.learning > ul > li > a {
+  color: darkblue;
+  text-decoration: underline;
+}
+
 .contact {
   padding: 10vh 5vw 5vh 10vw;
 }
